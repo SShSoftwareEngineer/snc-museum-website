@@ -1,0 +1,89 @@
+/* Токени дизайн-системи «Сайт музею» (prototype/project/ds/scm/tokens.json, версія 3).
+   Значення тут не змінювати вручну: у решті CSS використовуються лише ці змінні. */
+:root {
+  /* Кольори */
+  --color-brand-blue: #42578C;
+  --color-brand-blue-hover: #354570;
+  --color-brand-blue-pressed: #2B3A5C;
+  --color-surface-brand: var(--color-brand-blue);
+  --color-accent-yellow: #FAE530;
+  --color-accent-yellow-hover: #FFF176;
+  --color-accent-yellow-pressed: #F0D42A;
+  --color-gray-brand: #787F81;
+  --color-white: #FFFFFF;
+  --color-surface-cream: #FFF8E1;
+  --color-ink: #1F2A44;
+  --color-ink-muted: #4F5557;
+  --color-focus-ring: var(--color-brand-blue);
+  --color-focus-ring-on-brand: #FFFFFF;
+
+  /* Шрифти */
+  --font-display: "Unbounded", Arial, sans-serif;
+  --font-body: "Nunito", Arial, sans-serif;
+  --font-mono: "PT Mono", "Courier New", monospace;
+
+  /* Типографіка: розмір / висота рядка / вага */
+  --fs-display-xl: 56px;  --lh-display-xl: 62px;  --fw-display-xl: 800;
+  --fs-h1: 44px;          --lh-h1: 52px;          --fw-h1: 800;
+  --fs-h2: 32px;          --lh-h2: 40px;          --fw-h2: 700;
+  --fs-h3: 24px;          --lh-h3: 32px;          --fw-h3: 700;
+  --fs-lead: 22px;        --lh-lead: 34px;        --fw-lead: 400;
+  --fs-body: 18px;        --lh-body: 30px;        --fw-body: 400;
+  --fw-body-bold: 700;
+  --fs-button: 18px;      --lh-button: 24px;      --fw-button: 800;  --ls-button: 0.02em;
+  --fs-eyebrow: 16px;     --lh-eyebrow: 24px;     --fw-eyebrow: 400; --ls-eyebrow: 0.08em;
+  --fs-meta: 16px;        --lh-meta: 24px;        --fw-meta: 400;
+
+  /* Відступи */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  /* Радіуси */
+  --radius-sm: 4px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  /* Тіні (жорсткі, без розмиття) */
+  --shadow-hard-sm: 2px 2px 0 var(--color-ink);
+  --shadow-hard: 4px 4px 0 var(--color-ink);
+  --shadow-hard-hover: 5px 5px 0 var(--color-ink);
+  --shadow-none: 0 0 0 var(--color-ink);
+
+  /* Значення з ТЗ v3, яких немає в tokens.json */
+  --space-control-y: 14px;       /* відступи кнопок 14 / 28 */
+  --space-control-x: 28px;
+  --border-width-thin: 2px;
+  --border-width-thick: 3px;     /* рамки карток, кнопок і фото; фокус 3px */
+  --focus-offset: 3px;
+  --size-call-button: 64px;      /* кругла кнопка дзвінка */
+  --size-call-button-mobile: 56px;
+  --size-touch-min: 44px;
+  --size-container: 1120px;
+  --motion-duration: 0.15s;
+  --motion-lift: -4px;
+  --hero-veil: rgba(66, 87, 140, 0.85); /* синій шар на фото першого екрана: ТЗ 60% давало 2.83:1, потрібно 4.5:1 */
+}
+
+/* Мобільні розміри заголовків (до 600px) */
+@media (max-width: 600px) {
+  :root {
+    --fs-display-xl: 36px;  --lh-display-xl: 42px;
+    --fs-h1: 32px;          --lh-h1: 40px;
+    --fs-h2: 26px;          --lh-h2: 34px;
+  }
+}
+
+/* Дуже вузькі екрани (320–380px): слово «Доторкніться» шрифтом Unbounded 36px не вміщується
+   в 288px і рветься посеред слова, тому display-xl тут менший за токен (рішення поза tokens.json). */
+@media (max-width: 380px) {
+  :root {
+    --fs-display-xl: 28px;  --lh-display-xl: 34px;
+  }
+}

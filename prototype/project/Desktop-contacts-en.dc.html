@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Software and Computer Museum</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&family=PT+Mono&family=Unbounded:wght@700;800&display=swap">
+<style>
+body{margin:0;background:#FFFFFF;color:#1F2A44;font-family:"Nunito",Arial,sans-serif;font-size:18px;line-height:30px}
+a{color:#42578C}
+h1,h2,h3{font-family:"Unbounded",Arial,sans-serif;font-weight:800;margin:0;color:#42578C}
+p{margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px;box-sizing:border-box}
+.sec{padding:56px 0;border-top:3px solid #1F2A44;box-sizing:border-box}
+.eyebrow{font-family:"PT Mono",monospace;font-size:16px;line-height:24px;letter-spacing:.08em;color:#4F5557;margin:0 0 8px}
+.muted{color:#4F5557}
+.h1{font-size:52px;line-height:60px}
+.h2{font-size:32px;line-height:40px}
+.btn{display:inline-block;font-family:"Nunito",Arial,sans-serif;font-weight:800;font-size:18px;line-height:24px;min-height:52px;padding:14px 28px;border:3px solid #1F2A44;border-radius:12px;background:#FAE530;color:#42578C;box-shadow:4px 4px 0 #1F2A44;text-decoration:none;box-sizing:border-box}
+.btn:hover{background:#FFF176;transform:translate(-1px,-1px);box-shadow:5px 5px 0 #1F2A44}
+.btn:active{background:#F0D42A;transform:translate(4px,4px);box-shadow:none}
+.btn:focus-visible{outline:3px solid #42578C;outline-offset:3px}
+.card{background:#FFF8E1;border:3px solid #1F2A44;border-radius:20px;padding:20px;box-shadow:4px 4px 0 #1F2A44;transition:transform .15s,box-shadow .15s;box-sizing:border-box;display:flex;flex-direction:column;gap:8px;min-width:0}
+.card:hover{transform:translateY(-4px);box-shadow:5px 9px 0 #1F2A44}
+.card.hl{box-shadow:8px 8px 0 #1F2A44;padding:24px}
+.photo{border:3px solid #1F2A44;border-radius:20px;overflow:hidden;box-shadow:6px 6px 0 #787F81}
+.photo img{display:block;width:100%;height:100%;object-fit:cover}
+.squares{display:grid;grid-template-columns:repeat(4,16px);gap:4px}
+.squares b{width:16px;height:16px;border:2px solid #42578C;display:block}
+.squares b.g{background:#787F81;border-color:#787F81}
+.squares b.s{background:#42578C}
+.squares b.y{background:#FAE530;border-color:#1F2A44}
+.meta{font-family:"PT Mono",monospace;font-size:16px;line-height:24px;color:#4F5557}
+.nav{display:flex;gap:20px;flex-wrap:wrap}
+.nav a{color:#1F2A44;text-decoration:none;font-family:"PT Mono",monospace;font-size:16px}
+.nav a:hover{color:#42578C}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.grid2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;align-items:center}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hdr{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;padding:16px 24px;max-width:1120px;margin:0 auto;box-sizing:border-box}
+.phone{font-weight:800;color:#42578C;text-decoration:none}
+.foot{background:#42578C;color:#FFFFFF}
+.foot p,.foot a,.foot span{color:#FFFFFF}
+.foot a{text-decoration:underline}
+@media (max-width:900px){.grid3,.grid2,.hero{grid-template-columns:1fr}}
+@media (max-width:600px){
+ .hdr{padding:12px 16px;gap:12px}
+ .wrap{padding:0 16px}
+ .nav{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;width:100%;padding-bottom:4px}
+ .h1{font-size:34px;line-height:40px}
+ .h2{font-size:26px;line-height:34px}
+ .btn{display:block;text-align:center;margin-top:12px}
+ .sec{padding:40px 0}
+ .card.hl{box-shadow:6px 6px 0 #1F2A44}
+}
+</style>
+</helmet>
+<header style="border-bottom:3px solid #1F2A44">
+<div class="hdr">
+<a href="Desktop-en.dc.html" style="display:flex;align-items:center;gap:12px;text-decoration:none"><div class="squares"><b class="s"></b><b></b><b class="g"></b><b></b><b></b><b class="s"></b><b class="g"></b><b></b><b class="g"></b><b></b><b class="y"></b><b></b></div><span style="font-family:Unbounded,Arial,sans-serif;font-weight:800;font-size:18px;color:#42578C">Software and Computer Museum</span></a>
+<nav class="nav" aria-label="Sections"><a href="Desktop-en.dc.html">Home</a><a href="Desktop-courses-en.dc.html">Courses</a><a href="Desktop-excursions-en.dc.html">Excursion</a><a href="Desktop-exhibits-en.dc.html">Exhibits</a><a href="Desktop-about-en.dc.html">About</a><a href="Desktop-news-en.dc.html">News</a><a href="Desktop-contacts-en.dc.html" aria-current="page" style="text-decoration:underline">Contacts</a></nav>
+<div style="display:flex;align-items:center;gap:20px"><a class="meta" href="Desktop.dc.html" style="text-decoration:underline" aria-label="Switch to Ukrainian">Українська</a><a class="phone" href="tel:+380675394095">067 539 4095</a></div>
+</div>
+</header>
+<section class="wrap" style="padding-top:56px;padding-bottom:24px"><p class="eyebrow">06 · Address and phone</p><h1 class="h1" style="font-size:44px;line-height:52px">Address and phone</h1><p class="muted" style="font-size:20px;line-height:32px;margin-top:16px">Sign up for courses and excursions with one phone number: 067 539 4095.</p></section><section class="sec"><div class="wrap grid2"><div class="card"><p>79/1 Hryhorii Skovorody Street, Kharkiv, Kharkiv Oblast, 61000</p><p class="muted">Metro: Yaroslava Mudroho</p><p class="muted">Tuesday–Saturday, 10:00–18:00</p><p style="font-size:24px;font-weight:800;margin-top:12px"><a class="phone" href="tel:+380675394095">067 539 4095</a></p><p class="muted">contact@sncmuseum.org</p></div><div class="card" role="img" aria-label="Map: museum location, Skovorody St., 79/1" style="min-height:300px;justify-content:center;align-items:center;text-align:center"><span class="meta">Map</span></div></div></section>
+<footer class="foot">
+<div class="wrap" style="padding-top:40px;padding-bottom:40px;display:grid;grid-template-columns:1fr 1fr;gap:24px">
+<div>
+<p style="font-family:Unbounded,Arial,sans-serif;font-weight:800;font-size:18px">Software and Computer Museum</p>
+<p style="margin-top:8px">Email: contact@sncmuseum.org · 067 539 4095</p>
+<p style="margin-top:8px">Social media: Facebook · Instagram · YouTube · Telegram</p>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:12px 20px;align-content:flex-start"><a href="Desktop-en.dc.html">Home</a><a href="Desktop-about-en.dc.html">About the museum</a><a href="https://sncmuseum.org/exhibits">Exhibits on sncmuseum.org</a><a href="Desktop-courses-en.dc.html">Education</a><a href="Desktop-news-en.dc.html">Museum blog</a><span>Support the museum</span><span>Charitable services agreement</span><span>Privacy policy</span><span>Terms of use</span></div>
+</div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1000}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

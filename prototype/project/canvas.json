@@ -1,0 +1,172 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Desktop-about-en.dc.html": {
+      "expand": "fill",
+      "h": 1000,
+      "title": "ПК: про музей (EN)",
+      "w": 1280,
+      "x": 1920,
+      "y": 9100
+    },
+    "Desktop-about.dc.html": {
+      "expand": "fill",
+      "h": 1000,
+      "title": "ПК: про музей",
+      "w": 1280,
+      "x": 520,
+      "y": 9100
+    },
+    "Desktop-contacts-en.dc.html": {
+      "expand": "fill",
+      "h": 1000,
+      "title": "ПК: контакти (EN)",
+      "w": 1280,
+      "x": 1920,
+      "y": 7980
+    },
+    "Desktop-contacts.dc.html": {
+      "expand": "fill",
+      "h": 1000,
+      "title": "ПК: контакти",
+      "w": 1280,
+      "x": 520,
+      "y": 7980
+    },
+    "Desktop-courses-en.dc.html": {
+      "expand": "fill",
+      "h": 1500,
+      "title": "ПК: курси (EN)",
+      "w": 1280,
+      "x": 1920,
+      "y": 6360
+    },
+    "Desktop-courses.dc.html": {
+      "expand": "fill",
+      "h": 1500,
+      "title": "ПК: курси",
+      "w": 1280,
+      "x": 520,
+      "y": 6360
+    },
+    "Desktop-en.dc.html": {
+      "expand": "fill",
+      "h": 3600,
+      "title": "ПК: головна (EN)",
+      "w": 1280,
+      "x": 1077,
+      "y": -599
+    },
+    "Desktop-excursions-en.dc.html": {
+      "expand": "fill",
+      "h": 1100,
+      "title": "ПК: екскурсія (EN)",
+      "w": 1280,
+      "x": 1920,
+      "y": 3720
+    },
+    "Desktop-excursions.dc.html": {
+      "expand": "fill",
+      "h": 1100,
+      "title": "ПК: екскурсія",
+      "w": 1280,
+      "x": 520,
+      "y": 3720
+    },
+    "Desktop-exhibits-en.dc.html": {
+      "expand": "fill",
+      "h": 1300,
+      "title": "ПК: експонати (EN)",
+      "w": 1280,
+      "x": 1920,
+      "y": 4940
+    },
+    "Desktop-exhibits.dc.html": {
+      "expand": "fill",
+      "h": 1300,
+      "title": "ПК: експонати",
+      "w": 1280,
+      "x": 520,
+      "y": 4940
+    },
+    "Desktop-news-en.dc.html": {
+      "expand": "fill",
+      "h": 900,
+      "title": "ПК: новини (EN)",
+      "w": 1280,
+      "x": 1920,
+      "y": 11240
+    },
+    "Desktop-news.dc.html": {
+      "expand": "fill",
+      "h": 900,
+      "title": "ПК: новини",
+      "w": 1280,
+      "x": 520,
+      "y": 11240
+    },
+    "Desktop.dc.html": {
+      "expand": "fill",
+      "h": 3600,
+      "title": "ПК: головна",
+      "w": 1280,
+      "x": -361,
+      "y": -633
+    },
+    "Main-en.dc.html": {
+      "expand": "fill",
+      "h": 4600,
+      "title": "Головна (EN)",
+      "w": 390,
+      "x": -909,
+      "y": -633
+    },
+    "Main.dc.html": {
+      "expand": "fill",
+      "h": 4600,
+      "title": "Головна",
+      "w": 390,
+      "x": -1457,
+      "y": -633
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-23T12:00:00Z",
+    "v": 1
+  },
+  "designSystems": [
+    {
+      "artifact": "https://claude.ai/artifact/CdYygWdjfaMY1NKGRWKduj",
+      "copiedAt": "2026-10-24T13:56:11Z",
+      "namespace": "scm",
+      "title": "Сайт музею",
+      "version": null
+    }
+  ],
+  "launch": {
+    "file": "Main.dc.html",
+    "view": "focused"
+  },
+  "notes": {},
+  "order": [
+    "Main.dc.html",
+    "Main-en.dc.html",
+    "Desktop.dc.html",
+    "Desktop-en.dc.html",
+    "Desktop-excursions.dc.html",
+    "Desktop-excursions-en.dc.html",
+    "Desktop-exhibits.dc.html",
+    "Desktop-exhibits-en.dc.html",
+    "Desktop-courses.dc.html",
+    "Desktop-courses-en.dc.html",
+    "Desktop-contacts.dc.html",
+    "Desktop-contacts-en.dc.html",
+    "Desktop-about.dc.html",
+    "Desktop-about-en.dc.html",
+    "Desktop-news.dc.html",
+    "Desktop-news-en.dc.html"
+  ],
+  "pages": [],
+  "title": "Сайт музею: прототип"
+}
