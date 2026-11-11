@@ -9,7 +9,7 @@
     'logo.aria': 'Software and Computer Museum: home',
     'nav.aria': 'Sections',
     'nav.home': 'Home', 'nav.courses': 'Courses', 'nav.excursion': 'Excursion', 'nav.exhibits': 'Exhibits',
-    'nav.about': 'About', 'nav.news': 'News', 'nav.contacts': 'Contacts',
+    'nav.about': 'About', 'nav.news': 'News', 'nav.articles': 'Articles', 'nav.contacts': 'Contacts',
     'menu.aria': 'Menu',
     'call.aria': 'Call: 067 539 4095',
     'newtab': ' (opens in a new tab)',
@@ -91,6 +91,14 @@
     'contacts.page.title': 'Contacts: Software and Computer Museum',
     'contacts.page.desc': 'Address, metro, opening hours, phone and email of Software and Computer Museum in Kharkiv.',
     'ct.map.title':'OpenStreetMap: 79/1 Hryhorii Skovorody Street, Kharkiv',
+
+    'articles.page.title': 'Articles: Software and Computer Museum',
+    'articles.page.desc': 'Articles about the history of computers for visitors of Software and Computer Museum. The articles are in Ukrainian.',
+    'articles.title': 'Articles',
+    'articles.intro': 'Articles about the history of computers for museum visitors. The articles are written in Ukrainian.',
+    'articles.eyebrow': 'Article',
+    'articles.read': 'Read →',
+    'articles.back': '← All articles',
 
     'f.logo': 'Software and Computer Museum logo',
     'f.mail': 'Email:',
