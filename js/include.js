@@ -22,6 +22,8 @@
   // Позначає пункт меню поточної сторінки
   function markCurrent() {
     var file = location.pathname.split('/').pop() || 'index.html';
+    // Сторінки статей (article-*.html) належать до розділу «Статті»
+    if (file.indexOf('article-') === 0) file = 'articles.html';
     document.querySelectorAll('.nav__list a').forEach(function (a) {
       var href = a.getAttribute('href');
       if (href.indexOf('#') === -1 && href === file) a.setAttribute('aria-current', 'page');

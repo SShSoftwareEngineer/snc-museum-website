@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n="exhibits.page.title">Експонати: Software and Computer Museum</title>
+  <meta name="description" content="Експонати Software and Computer Museum у Харкові: MessagePad, Magnavox Odyssey, Apple II GS, QuickTake 100, Amiga 600 і Nintendo Famicom." data-i18n-content="exhibits.page.desc">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preload" href="assets/fonts/nunito-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/unbounded-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div data-include="partials/header.html"><a href="index.html">Software and Computer Museum</a> · <a href="tel:+380675394095">067 539 4095</a></div>
+
+  <main id="main">
+    <section class="section" aria-labelledby="exhibits-title">
+      <div class="container">
+        <p class="eyebrow" data-i18n="nav.exhibits">Експонати</p>
+        <h1 class="page-title" id="exhibits-title" data-i18n="ex.title">Експонати музею</h1>
+        <p class="muted lead-text" data-i18n="exhibits.intro">Шість експонатів із нашої колекції. У колекції понад 100 експонатів.</p>
+
+        <div class="grid-3 grid-3--pair">
+          <article class="card card--exhibit" id="messagepad">
+            <img src="assets/img/exhibit-messagepad.jpg" width="640" height="640" loading="lazy" alt="Пристрій Apple MessagePad у експозиції музею" data-i18n-alt="e1.alt">
+            <div class="card__body">
+              <span class="meta" data-i18n="e1.meta">Apple · 1993</span>
+              <h2 class="card__title">MessagePad</h2>
+              <p class="card__text" data-i18n="e1.text">Особистий цифровий помічник на ОС Newton із сенсорним екраном, задовго до появи слова «планшет».</p>
+            </div>
+          </article>
+          <article class="card card--exhibit" id="odyssey">
+            <img src="assets/img/exhibit-odyssey.jpg" width="640" height="638" loading="lazy" alt="Ігрова консоль Magnavox Odyssey у експозиції музею" data-i18n-alt="e2.alt">
+            <div class="card__body">
+              <span class="meta" data-i18n="e2.meta">Magnavox · 1972</span>
+              <h2 class="card__title">Magnavox Odyssey</h2>
+              <p class="card__text" data-i18n="e2.text">Перша консоль, яку можна було під'єднати до телевізора.</p>
+            </div>
+          </article>
+          <article class="card card--exhibit" id="apple-iigs">
+            <img src="assets/img/exhibit-apple-iigs.jpg" width="640" height="640" loading="lazy" alt="Комп'ютер Apple II GS у експозиції музею" data-i18n-alt="e3.alt">
+            <div class="card__body">
+              <span class="meta" data-i18n="e3.meta">Apple · 1986</span>
+              <h2 class="card__title">Apple II GS</h2>
+              <p class="card__text" data-i18n="e3.text">Модель із лінійки Apple II, першого серійного комп'ютера компанії.</p>
+            </div>
+          </article>
+          <article class="card card--exhibit" id="quicktake">
+            <img src="assets/img/exhibit-quicktake.jpg" width="640" height="641" loading="lazy" alt="Цифрова камера Apple QuickTake 100 у експозиції музею" data-i18n-alt="e4.alt">
+            <div class="card__body">
+              <span class="meta" data-i18n="e4.meta">Apple разом із Kodak · 1994</span>
+              <h2 class="card__title">Apple QuickTake 100</h2>
+              <p class="card__text" data-i18n="e4.text">Одна з перших цифрових фотокамер.</p>
+            </div>
+          </article>
+          <article class="card card--exhibit" id="amiga600">
+            <img src="assets/img/exhibit-amiga600.jpg" width="640" height="640" loading="lazy" alt="Комп'ютер Commodore Amiga 600 у експозиції музею" data-i18n-alt="e5.alt">
+            <div class="card__body">
+              <span class="meta" data-i18n="e5.meta">Commodore · 1992</span>
+              <h2 class="card__title">Commodore Amiga 600</h2>
+              <p class="card__text" data-i18n="e5.text">Повноцінний комп'ютер у корпусі клавіатури.</p>
+            </div>
+          </article>
+          <article class="card card--exhibit" id="famicom">
+            <img src="assets/img/exhibit-famicom.jpg" width="640" height="640" loading="lazy" alt="Ігрова консоль Nintendo Famicom у експозиції музею" data-i18n-alt="e6.alt">
+            <div class="card__body">
+              <span class="meta" data-i18n="e6.meta">Nintendo · 1983</span>
+              <h2 class="card__title">Nintendo Famicom</h2>
+              <p class="card__text" data-i18n="e6.text">Оригінал консолі, клоном якої була відома в Україні Dendy.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="section-actions">
+          <a class="btn" href="https://sncmuseum.org/exhibits" target="_blank" rel="noopener"><span data-i18n="ex.btn">Відкрити всі експонати на sncmuseum.org</span><span class="visually-hidden" data-i18n="newtab"> (відкриється в новій вкладці)</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="partials/footer.html"><a href="mailto:contact@sncmuseum.org">contact@sncmuseum.org</a> · <a href="tel:+380675394095">067 539 4095</a></div>
+  <div data-include="partials/call-button.html"></div>
+
+  <script src="js/include.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
