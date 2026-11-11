@@ -92,6 +92,10 @@
     'contacts.page.desc': 'Address, metro, opening hours, phone and email of Software and Computer Museum in Kharkiv.',
     'ct.map.title':'OpenStreetMap: 79/1 Hryhorii Skovorody Street, Kharkiv',
 
+    'exhibits.page.title': 'Exhibits: Software and Computer Museum',
+    'exhibits.page.desc': 'Exhibits of Software and Computer Museum in Kharkiv: MessagePad, Magnavox Odyssey, Apple II GS, QuickTake 100, Amiga 600 and Nintendo Famicom.',
+    'exhibits.intro': 'Six exhibits from our collection. The collection holds over 100 exhibits.',
+
     'articles.page.title': 'Articles: Software and Computer Museum',
     'articles.page.desc': 'Articles about the history of computers for visitors of Software and Computer Museum. The articles are in Ukrainian.',
     'articles.title': 'Articles',
