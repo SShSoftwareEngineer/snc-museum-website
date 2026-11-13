@@ -355,6 +355,40 @@
 .card--link { color: var(--color-ink); text-decoration: none; }
 .card--link .meta { color: var(--color-brand-blue); font-weight: var(--fw-body-bold); }
 
+/* ===== Анонс під першим екраном ===== */
+.announce { padding: var(--space-6) 0 var(--space-2); }
+.announce__link {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  min-height: var(--size-touch-min);
+}
+.announce__badge {
+  flex: none;
+  padding: var(--space-1) var(--space-3);
+  background: var(--color-accent-yellow);
+  border: var(--border-width-thin) solid var(--color-ink);
+  border-radius: var(--radius-pill);
+  font-family: var(--font-mono);
+  font-size: var(--fs-meta);
+  line-height: var(--lh-meta);
+}
+.announce__text {
+  flex: 1;
+  font-weight: var(--fw-body-bold);
+}
+.announce__arrow {
+  flex: none;
+  font-size: var(--fs-h3);
+  line-height: 1;
+  color: var(--color-brand-blue);
+}
+.announce__link:focus-visible {
+  outline: var(--border-width-thick) solid var(--color-focus-ring);
+  outline-offset: var(--focus-offset);
+}
+
 .prose { margin-top: var(--space-6); }
 /* Перший абзац статті: вступ крупнішим шрифтом */
 .prose > p:first-child { font-size: var(--fs-lead); line-height: var(--lh-lead); }

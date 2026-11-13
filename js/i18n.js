@@ -19,6 +19,10 @@
     'hero.courses': 'Courses', 'hero.courses.meta': 'Free',
     'hero.excursion': 'Excursion', 'hero.excursion.meta': '30 minutes, free',
 
+    'announce.aria': 'Announcement',
+    'announce.badge': 'New',
+    'announce.text': 'New section: Articles',
+
     'courses.eyebrow': '01 · Courses',
     'courses.title': 'Three free courses',
     'courses.intro': 'Each course has 90-minute sessions. Sign up by phone: 067 539 4095.',
