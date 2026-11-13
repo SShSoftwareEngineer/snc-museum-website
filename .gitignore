@@ -1,2 +1,10 @@
 ﻿.claude/settings.local.json
 
+
+# Робочі документи (не для публікації)
+content-plan.md
+handoff.md
+plan.md
+research-report.md
+Звіт_для_Claude_Code.md
+ТЗ_сайт_музею_*.docx
