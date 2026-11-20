@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог експонатів — Software and Computer Museum</title>
+  <meta name="description" content="Каталог експонатів Software and Computer Museum з пошуком і фільтрами.">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="katalog.css">
+  <script defer src="katalog.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти до каталогу</a>
+
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="logo" href="index.html" aria-label="Software and Computer Museum — головна">
+        <span class="squares" aria-hidden="true">
+          <b class="sq-solid"></b><b></b><b class="sq-yellow"></b><b class="sq-gray"></b>
+        </span>
+        <span class="logo__name">Software and Computer Museum</span>
+      </a>
+      <nav class="nav" aria-label="Основна навігація">
+        <ul class="nav__list">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="katalog.html" aria-current="page">Каталог</a></li>
+        </ul>
+      </nav>
+      <div class="site-header__tools">
+        <a class="phone" href="tel:+380675394095">067 539 4095</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section catalog" aria-labelledby="catalog-title">
+      <div class="container">
+        <p class="eyebrow">03 · Експонати</p>
+        <h1 id="catalog-title" class="page-title">Каталог експонатів</h1>
+        <p class="muted lead-text">Знайдіть експонат за типом, десятиліттям або назвою.</p>
+
+        <form class="catalog-filters card" id="filters" aria-labelledby="filters-title">
+          <h2 id="filters-title" class="visually-hidden">Фільтри каталогу</h2>
+          <div class="filter-field">
+            <label for="type-filter">Тип експоната</label>
+            <select id="type-filter" name="type">
+              <option value="">Усі типи</option>
+            </select>
+          </div>
+          <div class="filter-field">
+            <label for="decade-filter">Десятиліття</label>
+            <select id="decade-filter" name="decade">
+              <option value="">Усі десятиліття</option>
+              <option value="1970-ті">1970-ті</option>
+              <option value="1980-ті">1980-ті</option>
+              <option value="1990-ті">1990-ті</option>
+            </select>
+          </div>
+          <div class="filter-field filter-field--search">
+            <label for="name-search">Пошук за назвою</label>
+            <input id="name-search" name="name" type="search" autocomplete="off" placeholder="Наприклад, Apple II GS">
+          </div>
+        </form>
+
+        <p class="results-count" id="results-count" aria-live="polite">Знайдено експонатів: 0</p>
+        <div class="exhibits-grid" id="exhibits-list" aria-live="polite"></div>
+        <div class="empty-state card" id="empty-state" hidden>
+          <p>Нічого не знайдено</p>
+          <button class="btn" id="reset-filters" type="button">Скинути фільтри</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>
+        <p class="footer__name">Software and Computer Museum</p>
+        <p>Історія техніки, яку можна побачити наживо.</p>
+      </div>
+      <div class="footer__links">
+        <a href="mailto:contact@sncmuseum.org">contact@sncmuseum.org</a>
+        <a href="tel:+380675394095">067 539 4095</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,51 @@
+/* Стилі сторінки каталогу поверх дизайн-системи index.html. */
+.catalog { min-height: 70vh; }
+.catalog-filters {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1.4fr);
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+  background: var(--color-surface-cream);
+}
+.filter-field { display: flex; flex-direction: column; gap: var(--space-2); min-width: 0; }
+.filter-field label { font-weight: var(--fw-body-bold); }
+.catalog-filters .visually-hidden { white-space: normal; }
+.filter-field select,
+.filter-field input {
+  width: 100%;
+  min-height: var(--size-touch-min);
+  padding: 8px 12px;
+  border: var(--border-width-thick) solid var(--color-ink);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  color: var(--color-ink);
+  font: inherit;
+}
+.filter-field select:focus-visible,
+.filter-field input:focus-visible { outline: var(--border-width-thick) solid var(--color-focus-ring); outline-offset: var(--focus-offset); }
+.results-count { margin-top: var(--space-6); font-weight: var(--fw-body-bold); }
+.exhibits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+  margin-top: var(--space-4);
+}
+.exhibit-card { min-width: 0; }
+.exhibit-card h2 { font-size: var(--fs-h3); line-height: var(--lh-h3); }
+.exhibit-card__meta { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-3); }
+.exhibit-card__description { color: var(--color-ink-muted); }
+.empty-state { align-items: flex-start; margin-top: var(--space-5); }
+.empty-state p { font-family: var(--font-display); font-size: var(--fs-h3); line-height: var(--lh-h3); font-weight: var(--fw-h3); color: var(--color-brand-blue); }
+.empty-state .btn { margin-top: var(--space-3); }
+
+@media (max-width: 900px) {
+  .catalog-filters { grid-template-columns: 1fr 1fr; }
+  .filter-field--search { grid-column: 1 / -1; }
+  .exhibits-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .catalog-filters { grid-template-columns: 1fr; }
+  .filter-field--search { grid-column: auto; }
+  .exhibits-grid { grid-template-columns: 1fr; }
+  .catalog-filters, .exhibit-card, .empty-state { padding: var(--space-4); }
+}
