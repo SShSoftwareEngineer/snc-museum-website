@@ -1,0 +1,63 @@
+/* Каталог експонатів. Кольори, відступи й шрифти беруться зі змінних css/tokens.css. */
+.filters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+  margin-top: var(--space-6);
+}
+.field { display: flex; flex-direction: column; gap: var(--space-2); min-width: 0; }
+.field label {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  font-weight: var(--fw-body-bold);
+  color: var(--color-ink);
+}
+.field select,
+.field input {
+  width: 100%;
+  min-height: var(--size-touch-min);
+  padding: var(--space-2) var(--space-4);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-ink);
+  background: var(--color-white);
+  border: var(--border-width-thick) solid var(--color-ink);
+  border-radius: var(--radius-md);
+}
+
+.count {
+  margin-top: var(--space-5);
+  font-weight: var(--fw-body-bold);
+}
+
+.catalog {
+  list-style: none;
+  margin: var(--space-5) 0 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+}
+.catalog .card h2 {
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  overflow-wrap: anywhere;
+}
+.catalog .card p { margin: 0; }
+.catalog .card .info {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-ink-muted);
+}
+
+.empty { align-items: flex-start; margin-top: var(--space-5); }
+.empty[hidden] { display: none; }
+.empty p { margin: 0; font-weight: var(--fw-body-bold); }
+
+@media (max-width: 900px) {
+  .filters, .catalog { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 600px) {
+  .filters, .catalog { grid-template-columns: minmax(0, 1fr); }
+}
