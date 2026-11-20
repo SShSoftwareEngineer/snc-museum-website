@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Каталог експонатів: Software and Computer Museum</title>
+  <meta name="description" content="Каталог експонатів Software and Computer Museum: фільтр за типом і десятиліттям, пошук за назвою.">
+  <script>document.documentElement.classList.add('js');</script>
+  <link rel="preload" href="assets/fonts/nunito-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/unbounded-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="katalog.css">
+</head>
+<body>
+  <div data-include="partials/header.html"><a href="index.html">Software and Computer Museum</a> · <a href="tel:+380675394095">067 539 4095</a></div>
+
+  <main id="main">
+    <section class="section" aria-labelledby="katalog-title">
+      <div class="container">
+        <h1 class="page-title" id="katalog-title">Каталог експонатів</h1>
+
+        <form class="filters" id="filters" role="search" aria-label="Фільтри каталогу" onsubmit="return false">
+          <div class="field">
+            <label for="f-type">Тип</label>
+            <select id="f-type">
+              <option value="">Усі</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-decade">Десятиліття</label>
+            <select id="f-decade">
+              <option value="">Усі</option>
+              <option value="1970-ті">1970-ті</option>
+              <option value="1980-ті">1980-ті</option>
+              <option value="1990-ті">1990-ті</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-search">Пошук за назвою</label>
+            <input type="search" id="f-search" autocomplete="off">
+          </div>
+        </form>
+
+        <p class="count" id="count" role="status">Знайдено експонатів: 0</p>
+
+        <ul class="catalog" id="catalog"></ul>
+
+        <div class="card empty" id="empty" hidden>
+          <p>Нічого не знайдено</p>
+          <button class="btn" type="button" id="reset">Скинути фільтри</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div data-include="partials/footer.html"><a href="mailto:contact@sncmuseum.org">contact@sncmuseum.org</a> · <a href="tel:+380675394095">067 539 4095</a></div>
+  <div data-include="partials/call-button.html"></div>
+
+  <script src="js/include.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="katalog.js"></script>
+</body>
+</html>
