@@ -355,6 +355,70 @@
 .card--link { color: var(--color-ink); text-decoration: none; }
 .card--link .meta { color: var(--color-brand-blue); font-weight: var(--fw-body-bold); }
 
+/* ===== Блок «Музей відкритий» під першим екраном =====
+   Лише CSS: рядки з'являються по черзі, квадрати повільно (8 с) змінюють колір між кольорами
+   дизайн-системи, без різких перемикань. За prefers-reduced-motion анімації немає, усе видно одразу. */
+.open-now { padding: var(--space-6) 0 0; }
+.open-now__box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  padding: var(--space-5) var(--space-6);
+  background: var(--color-surface-brand);
+  color: var(--color-white);
+  border: var(--border-width-thick) solid var(--color-ink);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-hard);
+}
+.open-now__text { margin: 0; font-weight: var(--fw-body-bold); }
+.open-now__line { display: block; }
+.open-now__line:first-child {
+  font-family: var(--font-display);
+  font-size: var(--fs-h3);
+  line-height: var(--lh-h3);
+  color: var(--color-accent-yellow);
+}
+.open-now__line:not(:first-child) { font-size: var(--fs-lead); line-height: var(--lh-lead); }
+.open-now__pixels {
+  flex: none;
+  display: grid;
+  grid-template-columns: repeat(4, 20px);
+  gap: var(--space-2);
+}
+.open-now__pixels i {
+  width: 20px;
+  height: 20px;
+  background: var(--color-accent-yellow);
+  border: var(--border-width-thin) solid var(--color-ink);
+}
+.open-now__pixels i:nth-child(3n)   { background: var(--color-white); }
+.open-now__pixels i:nth-child(3n+1) { background: var(--color-surface-cream); }
+
+@media (prefers-reduced-motion: no-preference) {
+  .open-now__line { animation: open-line 0.7s ease-out both; }
+  .open-now__line:nth-child(1) { animation-delay: 0.2s; }
+  .open-now__line:nth-child(2) { animation-delay: 0.9s; }
+  .open-now__line:nth-child(3) { animation-delay: 1.6s; }
+  .open-now__pixels i { animation: open-pixel 8s ease-in-out infinite alternate; }
+  .open-now__pixels i:nth-child(4n+1) { animation-delay: 0s; }
+  .open-now__pixels i:nth-child(4n+2) { animation-delay: -2s; }
+  .open-now__pixels i:nth-child(4n+3) { animation-delay: -4s; }
+  .open-now__pixels i:nth-child(4n)   { animation-delay: -6s; }
+}
+@keyframes open-line {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: none; }
+}
+@keyframes open-pixel {
+  0%   { background-color: var(--color-accent-yellow); }
+  50%  { background-color: var(--color-surface-cream); }
+  100% { background-color: var(--color-white); }
+}
+@media (max-width: 600px) {
+  .open-now__box { flex-direction: column; align-items: flex-start; padding: var(--space-5); }
+}
+
 /* ===== Анонс під першим екраном ===== */
 .announce { padding: var(--space-6) 0 var(--space-2); }
 .announce__link {

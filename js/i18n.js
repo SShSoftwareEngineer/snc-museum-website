@@ -19,6 +19,10 @@
     'hero.courses': 'Courses', 'hero.courses.meta': 'Free',
     'hero.excursion': 'Excursion', 'hero.excursion.meta': '30 minutes, free',
 
+    'open.l1': 'The museum is open',
+    'open.l2': 'Tuesday–Saturday, 10:00–18:00',
+    'open.l3': 'Free admission',
+
     'announce.aria': 'Announcement',
     'announce.badge': 'New',
     'announce.text': 'New section: Articles',
